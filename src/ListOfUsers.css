@@ -1,4 +1,26 @@
 .UserList {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 1fr 2fr ;
+  grid-template-areas:
+    'name name'
+    'job job';
+  grid-gap: 10px 15px;
+  align-items: center;
+
+}
+
+
+.UserListName {
+  grid-area: name;
   list-style-type: none;
   font-size: 24px;
+
+}
+
+.UserListJob {
+  grid-area: job;
+  list-style-type: none;
+  font-size: 24px;
+
 }

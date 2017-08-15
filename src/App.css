@@ -18,6 +18,54 @@
   font-size: large;
 }
 
+.App-navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+  display: grid;
+  grid-template-columns: 4fr 2fr 2fr 2fr 2fr 2fr 2fr;
+  grid-template-rows:  1fr  ;
+  grid-template-areas:
+  'logo . . . home news contact about';
+  grid-gap: 5px 10px;
+  align-items: flex-end;
+}
+
+.App-navbar-logo {
+  grid-area: logo;
+  display: inline;
+  margin: 10px;
+}
+
+.App-navbar-home {
+  grid-area: home;
+  display: inline;
+  margin: 10px;
+
+}
+
+.App-navbar-news {
+  grid-area: news;
+  display: inline;
+  margin: 10px;
+
+}
+
+.App-navbar-contact {
+  grid-area: contact;
+  display: inline;
+  margin: 10px;
+
+}
+
+.App-navbar-about {
+  grid-area: about;
+  display: inline;
+  margin: 10px;
+
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

@@ -4,17 +4,24 @@ import './ListOfUsers.css';
 
 const ListOfUsers = ({users}) => {
   return (
-    <ul >
-      {
-        users.map((user, i) =>
-        <li key={i} className="UserList">
-          Name:
-          {user.name}
-          Job:
-          {user.job}
-        </li>)
-      }
-    </ul>
+    <div>
+      <ul className='UserList' >
+        {
+          users.map((user, i, t) =>
+          <div>
+            <li key={i} className="UserListName">
+              Name:  &nbsp;
+              {user.name}
+            </li>
+
+            <li key={t} className="UserListJob">
+              Job: &nbsp;
+              {user.job}
+            </li>
+        </div>)
+        }
+      </ul>
+    </div>
   )
 }
 
