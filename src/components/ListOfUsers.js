@@ -1,5 +1,5 @@
 import React from 'react';
-import './ListOfUsers.css';
+import '../css/ListOfUsers.css';
 
 
 const ListOfUsers = ({users}) => {
@@ -7,18 +7,17 @@ const ListOfUsers = ({users}) => {
     <div>
       <ul className='UserList' >
         {
-          users.map((user, i, t) =>
+          users.map((user, index) =>
           <div>
-            <li key={i} className="UserListName">
+            <li key={index} className="UserListName">
               Name:  &nbsp;
               {user.name}
-            </li>
-
-            <li key={t} className="UserListJob">
+              <br />
               Job: &nbsp;
               {user.job}
             </li>
-        </div>)
+          </div>
+      )
         }
       </ul>
     </div>

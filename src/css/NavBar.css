@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet');
+
+
+body {
+  font-family: 'Special Elite', cursive;
+}
+
+
+.App-navbar {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+  display: grid;
+  grid-template-columns: 4fr  2fr 2fr 2fr 2fr 2fr;
+  grid-template-rows:  1fr  ;
+  grid-template-areas:
+  'logo  . home news contact resume';
+  grid-gap: 5px 10px;
+  justify-content: flex-start;
+}
+
+
+.App-navbar-logo {
+  grid-area: logo;
+  display: inline;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.App-navbar-home {
+  grid-area: home;
+  display: inline;
+  margin: 10px;
+  text-decoration: none;
+
+}
+
+.App-navbar-news {
+  grid-area: news;
+  display: inline;
+  margin: 10px;
+  text-decoration: none;
+
+}
+
+.App-navbar-contact {
+  grid-area: contact;
+  display: inline;
+  margin: 10px;
+  text-decoration: none;
+
+}
+
+.App-navbar-resume {
+  grid-area: resume;
+  display: inline;
+  margin: 10px;
+  text-decoration: none;
+
+}

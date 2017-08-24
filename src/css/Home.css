@@ -1,3 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet');
+
+
+body {
+  font-family: 'Special Elite', cursive;
+}
+
+marquee {
+  text-align: center;
+  background-color: pink;
+}
+
+.FrontPageMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:  1fr;
+  grid-template-areas:
+    'mypic mytext';
+  grid-gap: 10px 15px;
+  align-items: center;
+}
+
+.FrontPagePic {
+  grid-area: mypic;
+  height: auto;
+  max-width: 100%;
+}
+
+.FrontPageText {
+  grid-area: mytext;
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+}
+
 .App {
   text-align: center;
 }
@@ -24,12 +59,12 @@
   padding: 0;
   background-color: grey;
   display: grid;
-  grid-template-columns: 4fr 2fr 2fr 2fr 2fr 2fr 2fr;
+  grid-template-columns: 4fr  2fr 2fr 2fr 2fr 2fr;
   grid-template-rows:  1fr  ;
   grid-template-areas:
-  'logo . . . home news contact about';
+  'logo  . home news contact about';
   grid-gap: 5px 10px;
-  align-items: flex-end;
+  justify-content: flex-start;
 }
 
 .App-navbar-logo {
