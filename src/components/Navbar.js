@@ -1,8 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Main from './Main'
-import Contat from './Contact'
+import Contact from './Contact'
 import Resume from './Resume'
+import Portfolio from './Portfolio'
+
 import '../css/NavBar.css'
 
 
@@ -17,6 +19,7 @@ const Header = () => (
         <li className='App-navbar-home'><Link to='/'>Home</Link></li>
         <li className='App-navbar-resume'><Link to='/Resume'>Resume</Link></li>
         <li className='App-navbar-contact'><Link to='/Contact'>Contact</Link></li>
+        <li className='App-navbar-portfolio'><Link to='/Portfolio'>Portfolio</Link></li>
       </ul>
     </nav>
   </header>

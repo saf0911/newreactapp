@@ -3,6 +3,7 @@
 
 body {
   font-family: 'Special Elite', cursive;
+  text-decoration: none;
 }
 
 
@@ -16,7 +17,7 @@ body {
   grid-template-columns: 4fr  2fr 2fr 2fr 2fr 2fr;
   grid-template-rows:  1fr  ;
   grid-template-areas:
-  'logo  . home news contact resume';
+  'logo  . home portfolio contact resume';
   grid-gap: 5px 10px;
   justify-content: flex-start;
 }
@@ -37,8 +38,8 @@ body {
 
 }
 
-.App-navbar-news {
-  grid-area: news;
+.App-navbar-portfolio {
+  grid-area: portfolio;
   display: inline;
   margin: 10px;
   text-decoration: none;
